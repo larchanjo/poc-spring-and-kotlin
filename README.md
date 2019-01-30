@@ -17,3 +17,4 @@ This is a simple poc using [Spring] and [Kotlin]
 ## Samples
 
 GET - http://localhost:8080/weather?cityName=London&countryCode=uk
+GET - http://localhost:8080/recommendations?temperature=30
