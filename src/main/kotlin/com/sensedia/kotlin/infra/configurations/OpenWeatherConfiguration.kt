@@ -1,4 +1,4 @@
-package com.sensedia.kotlin.infra
+package com.sensedia.kotlin.infra.configurations
 
 import com.sensedia.kotlin.domain.OpenWeatherApi
 import org.slf4j.LoggerFactory

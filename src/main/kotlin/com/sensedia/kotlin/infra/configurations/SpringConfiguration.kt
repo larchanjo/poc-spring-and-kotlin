@@ -1,4 +1,4 @@
-package com.sensedia.kotlin.infra
+package com.sensedia.kotlin.infra.configurations
 
 import org.slf4j.LoggerFactory
 import org.springframework.context.annotation.Bean

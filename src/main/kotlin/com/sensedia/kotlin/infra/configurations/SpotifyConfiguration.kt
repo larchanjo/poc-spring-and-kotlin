@@ -1,4 +1,4 @@
-package com.sensedia.kotlin.infra
+package com.sensedia.kotlin.infra.configurations
 
 import com.wrapper.spotify.SpotifyApi
 import org.slf4j.LoggerFactory
@@ -22,7 +22,7 @@ class SpotifyConfiguration {
                 .setClientSecret(clientSecret)
                 .build()
 
-        val clientCredentialsRequest = spotifyApi.clientCredentials().build();
+        val clientCredentialsRequest = spotifyApi.clientCredentials().build()
         val clientCredentials = clientCredentialsRequest.execute()
         spotifyApi.accessToken = clientCredentials.accessToken
         log.info("Access token ${clientCredentials.accessToken} expires in ${clientCredentials.expiresIn}(s)")

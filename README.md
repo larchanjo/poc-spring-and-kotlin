@@ -13,3 +13,9 @@ This is a simple poc using [Spring] and [Kotlin]
 
 [Spring]:https://spring.io
 [Kotlin]:https://kotlinlang.org
+
+## Samples
+
+GET - http://localhost:8080/weather?cityName=Americana&countryCode=br
+
+GET - http://localhost:8080/recommendations?temperature=30
