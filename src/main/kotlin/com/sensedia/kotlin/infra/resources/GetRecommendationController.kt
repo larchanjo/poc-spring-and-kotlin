@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RestController
 class GetRecommendationController(val getTrackService: GetRecommendationService) {
 
     @GetMapping()
-    fun getWeather(@RequestParam temperature: Double) = getTrackService.getRecommendation(temperature)
+    fun getRecommendation(@RequestParam temperature: Double) = getTrackService.getRecommendation(temperature)
 
 }

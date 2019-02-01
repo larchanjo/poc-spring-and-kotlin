@@ -17,13 +17,11 @@ class GetRecommendationService(val spotifyApi: SpotifyApi) {
                 .build().execute()
     }
 
-    private fun getStyleByTemperature(temperature: Double): String {
-        return when (temperature) {
-            in 0..10 -> "pop"
-            in 10..20 -> "rock"
-            in 30..40 -> "electro"
-            else -> "classical"
-        }
+    private fun getStyleByTemperature(temperature: Double) = when (temperature) {
+        in 0..10 -> "pop"
+        in 10..20 -> "rock"
+        in 30..40 -> "electro"
+        else -> "classical"
     }
 
 }
